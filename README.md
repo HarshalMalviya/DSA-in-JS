@@ -8,8 +8,9 @@ git push
 
 # leet code template
 //test case
-console.log(getConcatenation([1,2,1]))
-console.log(getConcatenation([1,3,2,1]))
+console.log(getConcatenation(  ))
+console.log(getConcatenation(  ))
+console.log(getConcatenation(  ))
 
 /*details
 very easy 1
