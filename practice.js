@@ -1,17 +1,11 @@
-function countVowelsConsonants(s) {
-    let vowels = 0;
-    let consonants = 0;
+const arr = [1, 2, 2, 3, 1, 1];
 
-    for (let char of s.toLowerCase()) {
-        if ("aeiou".includes(char)) {
-            vowels++;
-        } else if (char >= "a" && char <= "z") {
-            consonants++;
-        }
-    }
+const freq = new Map();
 
-    return { vowels, consonants };
+for (const num of arr) {
+    freq.set(num, (freq.get(num) || 0) + 1);
 }
 
-console.log(countVowelsConsonants("Hello World 123"));
-// { vowels: 3, consonants: 7 }
+console.log(freq);
+
+// { 1 => 3, 2 => 2, 3 => 1 }
