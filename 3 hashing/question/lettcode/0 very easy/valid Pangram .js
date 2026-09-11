@@ -14,7 +14,7 @@ console.log(checkIfPangram("thequickbrownfoxjumpsoverthelazydog"))
 console.log(checkIfPangram("leetcode"))
 
 /*details
-very easy 0
+very easy -1
 leetcode 1832 - Check if the Sentence Is Pangram
 Pattern: hash table
 topic : hashing 

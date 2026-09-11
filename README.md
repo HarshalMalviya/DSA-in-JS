@@ -4,11 +4,11 @@ Daily practice of Data Structures and Algorithms, including problem-solving, imp
 # daily git commit 
 git add .
 git commit -m "commit name"
-git push
+git push     
 
 # leet code template
 //test case
-console.log(getConcatenation(  ))
+console.log(getConcatenation(  )) 
 console.log(getConcatenation(  ))
 console.log(getConcatenation(  ))
 
