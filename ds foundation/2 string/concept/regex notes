@@ -1,0 +1,101 @@
+/*
+========================================
+REGEX CHEAT SHEET — DSA
+========================================
+
+1. CHARACTER SETS
+----------------------------------------
+[a-z]           lowercase letters
+[A-Z]           uppercase letters
+[0-9]           numbers
+[a-zA-Z]        any letter
+[a-zA-Z0-9]     letters + numbers
+
+[^...]          NOT these characters
+
+Examples:
+[^0-9]          anything except numbers
+[^a-zA-Z]       anything except letters
+[^a-z0-9]       anything except lowercase letters/numbers
+
+
+2. SHORTCUTS
+----------------------------------------
+\d              digit (0-9)
+\s              whitespace
+.               any character
+
+
+3. QUANTIFIERS
+----------------------------------------
+*               0 or more
++               1 or more
+?               0 or 1
+
+Examples:
+a*              "", "a", "aa", "aaa"
+a+              "a", "aa", "aaa"
+a?              "", "a"
+
+
+4. POSITION
+----------------------------------------
+^               beginning of string
+$               end of string
+
+Examples:
+^hello          starts with "hello"
+hello$          ends with "hello"
+
+
+5. FLAGS
+----------------------------------------
+g               find all matches
+i               ignore uppercase/lowercase
+
+Example:
+/hello/gi       find all "hello", ignoring case
+
+
+6. replace()
+----------------------------------------
+
+Remove all digits:
+"abc123".replace(/[0-9]/g, "")
+// "abc"
+
+Remove all special characters:
+"hello@#$".replace(/[^a-zA-Z0-9]/g, "")
+// "hello"
+
+Keep only letters and numbers:
+"Hello @123!".replace(/[^a-zA-Z0-9]/g, "")
+// "Hello123"
+
+Ignore case:
+"Hello WORLD".replace(/[^a-z0-9]/gi, "")
+// "HelloWORLD"
+
+
+========================================
+MOST IMPORTANT FOR DSA
+========================================
+
+/[a-z]/g              → lowercase letters
+/[A-Z]/g              → uppercase letters
+/[0-9]/g              → digits
+/[^a-zA-Z0-9]/g       → special characters
+
+Common palindrome cleaning:
+
+s = s.toLowerCase().replace(/[^a-z0-9]/gi, "");
+
+Example:
+"A man, a plan!"
+        ↓
+"a man, a plan!"
+        ↓
+"amanaplan"
+
+========================================
+*/

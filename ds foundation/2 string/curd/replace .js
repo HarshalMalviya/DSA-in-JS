@@ -1,4 +1,5 @@
 
-let s = "I like cats";
+let s = "I like cat with cat";
 
-console.log(s.replace("cats", "dogs"));
+console.log(s.replace("cat", "dogs"));
+console.log(s.replaceAll("{cat}","dogs"));

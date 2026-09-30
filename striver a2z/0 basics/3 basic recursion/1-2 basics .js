@@ -13,3 +13,5 @@ function functionName(parameter) {
 }
 
 functionName(parameter)
+
+//Recursion inside a class → this.methodName()
