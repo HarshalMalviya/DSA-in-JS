@@ -58,5 +58,4 @@ function combine(arr, low, mid, high) {
 devide(arr,0,arr.length-1)
 console.log(arr)
 
-divide(arr,low,hogh)
 

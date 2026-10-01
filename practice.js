@@ -1,2 +1,5 @@
-        let num = Math.max(99, 100);
-console.log(num)
+let arr = [1, 2, 3, 0, 0, 0]
+
+arr.length = 3;
+
+console.log(arr)
