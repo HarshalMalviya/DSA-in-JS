@@ -1,5 +1,13 @@
-let arr = [1, 2, 3, 0, 0, 0]
+let arr = [7, 0, 0, 1, 7, 7, 2, 7, 7];
 
-arr.length = 3;
+const freq = new Map();
 
-console.log(arr)
+for (let i = 0; i < arr.length; i++) {
+  freq.set(arr[i], (freq.get(arr[i]) || 0) + 1);
+}
+
+for (let [key, value] of freq) {
+  if (value > arr.length / 2) {
+    console.log(key);
+  }
+}
